@@ -1,10 +1,20 @@
+// Preloader
+window.addEventListener('load', () => {
+    const preloader = document.querySelector('.preloader');
+    setTimeout(() => {
+        preloader.classList.add('fade-out');
+        // İsteğe bağlı, animasyon bitince DOM'dan kaldırabiliriz:
+        // setTimeout(() => preloader.style.display = 'none', 600);
+    }, 800);
+});
+
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    
+
     // Animate Icon
     const icon = hamburger.querySelector('i');
     if (navLinks.classList.contains('active')) {
@@ -56,7 +66,7 @@ const skillsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 const skillsGrid = document.querySelector('.skills-grid');
-if(skillsGrid) {
+if (skillsGrid) {
     skillsObserver.observe(skillsGrid);
 }
 
