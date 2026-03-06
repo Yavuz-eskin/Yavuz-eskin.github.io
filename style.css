@@ -532,3 +532,46 @@ footer {
         justify-content: center;
     }
 }
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 5%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .blob {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+        font-size: 1.05rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .project-info {
+        padding: 1.5rem;
+    }
+}
