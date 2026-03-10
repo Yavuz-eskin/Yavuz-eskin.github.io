@@ -261,7 +261,7 @@ a {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 900px;
     margin: 0 auto;
@@ -603,6 +603,10 @@ footer {
     .contact-card {
         width: 100%;
         justify-content: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
